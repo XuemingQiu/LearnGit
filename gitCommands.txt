@@ -1,0 +1,26 @@
+1. 安装git, yum install git
+2. 首先配置全局变量 
+   a. git config --global user.name "xxxx"
+   b. git config --global user.mail "your email"
+3. 创建工作去 mkdir filename   
+4. cd  filename
+5. 初始化成git仓库：git init
+6. 创建文件，vim file编写完后
+7. 将该文件推送到暂存区：git add file
+8. 然后将暂存区文件推送到git仓库： git commit -m "为什么推送"
+9. 如果在工作去出现错误 git checkout -- file  到达撤销文章的内容
+10. 如果在暂存区即已经git add后了，那么这时候git checkout -- file 撤回到工作区
+11. 同理也可以从仓库尚未远程，可以撤销到工作区
+12. 查看状态 git status
+13. 查看自己的git操作，git log 或者 git reflog
+14. 版本回退  git reset HEAD^ 返回到上前一个版本 git reset HEAD 版本号
+15. 在github上创建仓库后用 git clone 本地
+16. 上传到github：git push -u origin master
+17. 分支控制：git branch -b 分支
+18. 分支切换：git checkout 分支
+19. 分支合并：git merge 分支：将某分支合并到该分支下
+20. 删除分支：git branch -d 分支
+21. 关联远程库：git remote add 名称 git@github.com:name/Reposity/git
+其他命令详解见：https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
+git命令速查： https://blog.newnius.com/git-commands-cheat-sheet.html
+
